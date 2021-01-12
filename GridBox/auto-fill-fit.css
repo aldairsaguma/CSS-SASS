@@ -1,0 +1,17 @@
+.contenedor-fill{
+    display: grid;
+    gap: 10px;
+    /* auto-fill rellena la fila con todas las filas que pueda poner dentro 
+        y crea columnas implicitas en que caso de que quepan 
+    */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.contenedor-fit{
+    display: grid;
+    gap: 10px;
+    /* auto-fit rellena todo el espacio que pueda con los cajas que tenga disponible
+    en responsive se comporta igual que auto-fill
+    */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

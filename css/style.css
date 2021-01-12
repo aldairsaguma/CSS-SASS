@@ -1,0 +1,10 @@
+#clear {
+  background-color: red;
+  color: red;
+}
+#clear:before {
+  color: red;
+  background-attachment: red;
+  border: solid red 1px;
+  background: url('sdadsasad');
+}

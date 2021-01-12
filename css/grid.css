@@ -1,0 +1,57 @@
+.container div{
+    background-color: #666666;
+}
+.container div:hover{
+    border: solid red 1px;
+}
+.container{
+    display: grid;
+    align-items: stretch;
+    /** fr es fracciones - en cuantas columnas va a dividir **/
+    /** Repeat pasa 2 parametros 
+        1 -> Numero de veces que vas a repetir 
+        2 -> La medida
+        le dice que 1fr se va repetir 6 veces
+    **/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    /** minmax indicar el minimo de alto del row  y maximo **/
+    grid-template-rows: minmax(100px, auto);
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1rem;
+}
+
+/** Abarcar varias columnas  **/
+.uno{
+    grid-column: 1/4;
+    grid-row: 1/6;
+}
+
+.dos{
+    grid-column: 1/3;
+}
+
+.cuatro{
+    grid-column: 1/4;
+}
+
+/**
+Cuando hablamos de fila o columna hablamos de align-items, justify-items
+cuando hablamos de cada uno de los elementos align-self, justify-self
+**/
+
+/* .uno{
+    align-self: start;
+}
+.dos{
+    align-self: center;
+}
+
+.cuatro{
+    justify-self: end;
+} */

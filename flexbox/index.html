@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        width: 500px;
+        height: 500px;
+        border: solid #000 1px;
+        margin: auto;
+        display: flex;
+    }
+    .caja1{
+        background-color: blue;
+        flex: 1 1 0px;
+        order: 3;
+    }
+    .caja2{
+        background-color: green;
+        flex: 1 1 0px;
+        order: 2;
+    }
+    .caja3{
+        background-color: pink;
+        flex: 1 1 0px;
+        order: 1;
+        /** Alinea en el eje secundario **/
+        /* align-self: flex-end; */
+    }
+</style>
+
+<!--
+Flex-grow
+Su valor por defecto es 0
+Trabaja cuando hay espacio disponible
+Lo que hace es dividirse el espacio restante entre los hijos
+
+
+Flex-shrink
+Determina el nivel de reducción de los hijos - cuando falta espacio se reducen los hijos - valor inicial 1
+
+Flex-basis
+Define el tamaño inicial de las cajas - al usar esta propieda ya no usas width si no esta
+
+Flex 
+Es el resumen de las 3 anteriores
+
+ -->
+
+
+<body>
+    <section>
+        <article class="caja1">
+            Caja 12222222
+        </article>
+        <article class="caja2">
+            Caja 2
+        </article>
+        <article class="caja3">
+            Caja3
+        </article>
+    </section>
+</body>
+</html>
