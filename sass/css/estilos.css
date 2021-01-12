@@ -1,0 +1,48 @@
+.extender, .div1 {
+  font-weight: 900;
+}
+
+div {
+  height: 100px;
+  width: 600px;
+}
+div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.div1 {
+  background-color: #990000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: yellow;
+}
+
+.div2 {
+  background-color: green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.div3 {
+  background-color: silver;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: blue;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container section {
+  background-color: aqua;
+  float: left;
+  width: 37.5%;
+  height: 100px;
+}
+.container aside {
+  background-color: black;
+  float: left;
+  width: 62.5%;
+  height: 100px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

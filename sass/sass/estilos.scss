@@ -1,0 +1,62 @@
+// white parametro por defecto
+@mixin cuadro ($color:white){
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $color;
+}
+
+
+$w1 : 300px;
+$w2 : 300px;
+
+
+.extender{
+    font-weight: 900;;
+}
+
+div{
+    height: 100px;
+    width: $w1 + $w2;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+.div1{
+    // todos los que tengan un guión
+    //Es nextin
+    background: {
+        color: darken($color: red, $amount: 20);
+    };
+    @include cuadro(yellow);
+    @extend .extender;
+}
+.div2{
+    background-color: green;
+    @include cuadro(white);
+}
+.div3{
+    background-color: silver;
+    @include cuadro(blue);
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    section{
+        background: {
+            color: aqua;
+        };
+        float: left;
+        //Sacar el porcentaje
+        width: 300px / 800px * 100% ;
+        height: 100px;
+    }
+    aside{
+        background: {
+            color: black;
+        };
+        float: left;
+        //Sacar el porcentaje
+        width: 500px / 800px * 100% ;
+        height: 100px;
+    }
+}
